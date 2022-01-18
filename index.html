@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <img id="mode" src="./images/icon-moon.svg" alt="">
+
+    <img src="./images/logo.svg" alt="">
+
+    <div class="container">
+        
+        <div class="left">
+            <div class="bill">
+                <p>Bill</p>
+
+                <div class="input_container">
+                    <img src="./images/icon-dollar.svg" alt="">
+                    <input id="bill-input" type="text" placeholder="0">
+                </div>
+
+            </div>
+
+            <div class="tip">
+                <!-- HW STYLE THE TIP BUTTONS DIV TO LOOK LIKE THE DESIGN -->
+                <!-- TWO WAYS FLEX BOX -->
+                <!-- display: grid -->
+
+                
+                <p>Select Tip %</p>
+
+                <div class="buttons">
+                    <button class="button">5%</button>
+                    <button class="button">10%</button>
+                    <button class="button">15%</button>
+                    <button class="button">25%</button>
+                    <button class="button">50%</button>
+                    <input  id = "custom-tip"type="text" placeholder="Custom"></input>
+                </div>
+
+                <!-- <div class="row">
+                    <button>5%</button>
+                    <button>10%</button>
+                    <button>15%</button>
+                </div>
+
+                <div class="row">
+                    <button>25%</button>
+                    <button>50%</button>
+                    <button>Custom</button>
+                </div> -->
+            </div>
+
+            <div class="people">
+
+                <p>Number of people</p>
+
+                <div class="input_container">
+                    <img src="./images/icon-person.svg" alt="">
+                    <input id="number-of-people" type="text" placeholder="0">
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="right">
+
+            <div class="display">
+
+                <div class="amount">
+                    <div class="tip_per">
+                        <p>Tip Amount</p>
+                        <p>/person</p>
+                    </div>
+                    
+                    <h1 id = "tip-amount">$0.00</h1>
+                </div>
+
+                <div class="amount">
+                    <div class="total_per">
+                        <p>Total Amount</p>
+                        <p>/person</p>
+                    </div>
+
+                    <h1 id = "total-amount">$0.00</h1>
+                </div>
+            </div>
+
+            <div class="reset">
+                <button onclick="resetCalc()">RESET</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
